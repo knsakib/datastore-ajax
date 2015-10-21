@@ -1,0 +1,11 @@
+{% for message_entities in message_query %}	
+			
+				<b>email: {{message_entities.email}}</b>
+				<div class="message">
+				message: 
+				{{
+				message_entities.message
+				}} 
+				</div>
+			
+{% endfor %}
